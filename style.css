@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#form_box {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form_box h2 {
+    text-align: center;
+    color: #233b85;
+    margin-bottom: 20px;
+}
+
+.f_line {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.f_line span {
+    margin-bottom: 10px;
+}
+
+.f_line label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #233b85;
+}
+
+.f_line input[type="text"], 
+.f_line input[type="date"], 
+.f_line input[type="password"], 
+.f_line select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#btt_form {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    background-color: #030f35;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#btt_form:hover {
+    background-color: #6285ee;
+}
+
+#f_alert {
+    display: none;
+    background-color: #fc6767;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    #form_box {
+        padding: 15px;
+    }
+
+    #btt_form {
+        font-size: 16px;
+    }
+}

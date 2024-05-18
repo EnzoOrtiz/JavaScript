@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro - Time de Futebol</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validar.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div id="form_box">
+            <h2>Cadastro para Time de Futebol</h2>
+            
+            <p id="f_alert" style="display: none;">
+                Os campos não foram preenchidos corretamente!
+            </p>
+            
+            <form action="" onsubmit="return validacao()">
+                
+                <div class="f_line">
+                    <span>
+                        <label for="i_nome">Nome</label>
+                        <input type="text" id="i_nome" name="nome" required>
+                    </span>
+
+                    <span>
+                        <label for="i_sobrenome">Sobrenome</label>
+                        <input type="text" id="i_sobrenome" name="sobrenome" required>
+                    </span>
+                </div>
+                
+                <div class="f_line">
+                    <span>
+                        <label for="i_data">Data de Nascimento</label>
+                        <input type="date" id="i_data" name="data_nascimento" required>
+                    </span>
+
+                    <span>
+                        <label for="i_posicao">Posição</label>
+                        <select id="i_posicao" name="posicao" required>
+                            <option value="">Selecione</option>
+                            <option value="goleiro">Goleiro</option>
+                            <option value="defensor">Defensor</option>
+                            <option value="meio-campo">Meio-Campo</option>
+                            <option value="atacante">Atacante</option>
+                        </select>
+                    </span>
+                </div>
+                
+                <div class="f_line">
+                    <span>
+                        <label>Gênero</label>
+                        <label>
+                            <input type="radio" name="genero" value="feminino" required> Feminino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="masculino"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" value="outros"> Outros
+                        </label>
+                    </span>
+                </div>
+                
+                <div class="f_line">
+                    <span>
+                        <label for="i_senha">Senha</label>
+                        <input type="password" id="i_senha" name="senha" required>
+                    </span>
+
+                    <span>
+                        <label for="i_conSenha">Confirmar Senha</label>
+                        <input type="password" id="i_conSenha" name="confirmar_senha" required>
+                    </span>
+                </div>
+                
+                <div class="f_line">
+                    <span>
+                        <input type="submit" id="btt_form" value="Cadastrar">
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
