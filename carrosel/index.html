@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Carrossel</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/js.js" defer></script>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div id="logo"> 
+                <img id="img" src="img/img/Escola de Futebol Elegante Logo.jpg" alt="">
+                Fut<span>Life</span> 
+                
+            </div>
+    
+            <input type="checkbox" id="btt_menu">
+            <label for="btt_menu"> &#9776; </label>
+    
+            <div id="nav">
+                <ul>
+    
+                    <li class="dropdown">  <a href="#" class="ativo"> Menu </a>  </li>
+                    <li>  <a href="times.html" class=""> Times </a>  </li>
+                    <li>  <a href="historias.html">  Histórias </a>   </li>
+                    <li>  <a href="campeonatos.html"> Campeonatos </a>   </li>
+                    <li>  <a href="noticias.html"> Notícias   </a>   </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="fade">
+                <div class="n_text"> 1 / 3 </div>
+                <img src="img/img/bayer lewerkusen.png">
+                <div class="i_text"> Bayer </div>
+            </div>
+            
+            <div class="fade">
+                <div class="n_text"> 2 / 3 </div>
+                <img src="img/img/flamengo-2022.jpg">
+                <div class="i_text"> Flamengo </div>
+            </div>
+            
+            <div class="fade">
+                <div class="n_text"> 3 / 3 </div>
+                <img src="img/img/historia do flamengo.jpeg">
+                <div class="i_text"> historia flamengo </div>
+            </div>
+
+            <a class="prev" onclick="plus_slides(-1)"> &#10094; </a>
+            <a class="next" onclick="plus_slides(1)"> &#10095; </a>
+        </div>
+
+        <div class="dot_box">
+            <span class="dot" onclick="current_slides(1)"></span>
+            <span class="dot" onclick="current_slides(2)"></span>
+            <span class="dot" onclick="current_slides(3)"></span>
+        </div>
+    </body>
+
+</html>
