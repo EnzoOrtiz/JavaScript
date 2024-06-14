@@ -1,0 +1,43 @@
+:root {
+    --padrao: #2e0bde;
+    --c1: #000000;
+    --c2: #ffffff;
+}
+
+body {
+    background-color: var(--padrao);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+#img{
+    width: 110px;
+    height: 110px;
+    margin-right: 10px;
+}
+
+
+.ativo{
+    background-color: var(--c1);
+    color: var(--c2);
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c1);
+}
+
+#logo {
+    color: #ffffff;
+    font-size: 40px;
+    padding: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+
